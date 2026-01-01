@@ -2,7 +2,7 @@
 
 This document provides the complete user guide and technical specifications for the Bitcoin Offline Sweeper tool. This utility is designed for high-security environments, allowing users to compose and sign simple Sweep Bitcoin transactions from WIF keys on air-gapped/offline hardware for future broadcasting.
 
-**WARNING**: Private keys grant total control over your funds. Only use this tool in a trusted, malware-free environment. Always verify destination addresses twice.
+**⚠️ WARNING**: Private keys grant total control over your funds. Only use this tool in a trusted, malware-free environment. Always verify destination addresses twice.
 
 
 ## **Files**
@@ -66,4 +66,4 @@ To resolve this:
 
 **IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE** FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-**WARNING**: Private keys grant total control over your funds. Only use this tool in a trusted, malware-free environment. Always verify destination addresses twice.
+**⚠️ WARNING**: Private keys grant total control over your funds. Only use this tool in a trusted, malware-free environment. Always verify destination addresses twice.
