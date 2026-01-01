@@ -16,12 +16,12 @@ This document provides the complete user guide and technical specifications for 
 1. **Secure Environment**: Ensure the computer is completely disconnected from all networks (WiFi/Bluetooth/Ethernet). This is optional but encouraged.
 2. **Authentication**: Enter your **Private Key (WIF)**, the **Destination Address**, and your preferred **Fee Rate (sat/vB)**.  
 3. **Cryptographic Signing**: Click **Sign Transaction**. The tool uses a local BitcoinJS engine to sign the inputs.  
-4. **Verification**: Carefully review the details in the **HEX Transaction Details** section. Ensure the "Sent Amount" and "To Address" match your expectations before proceeding. It is also advisable to use another tool to preview the transaction and check all data before broadcasting. Mempool.space has a good [Preview Transaction tool](https://mempool.space/tx/preview) before broadcast.
+4. **Verification**: Carefully review the details in the **HEX Transaction Details** section. Ensure the "Sent Amount" and "To Address" match your expectations before proceeding. It is also advisable to use another tool to preview the transaction and check all data before broadcasting. Mempool.space has a good [Preview Transaction tool](https://mempool.space/tx/preview){:target="_blank"} before broadcast.
 
 ### **Phase 3: Broadcast**
 
 1. **Export Hex**: Copy the generated **Signed Transaction Hex**.  
-2. **Finalize**: Transfer this hex back to an online device and broadcast it using a trusted service (e.g., [Blockstream.info](https://blockstream.info/tx/push), [Mempool.space](https://mempool.space/tx/preview), or your own full node).
+2. **Finalize**: Transfer this hex back to an online device and broadcast it using a trusted service (e.g., [Blockstream.info](https://blockstream.info/tx/push){:target="_blank"}, [Mempool.space](https://mempool.space/tx/preview){:target="_blank"}, or your own full node).
 
 ## **2\. Technical Security & PSBT Logic**
 
