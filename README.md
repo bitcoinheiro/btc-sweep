@@ -11,7 +11,7 @@ This document provides the complete user guide and technical specifications for 
 
 **bitcoin_sweeper_QRcode.html** - With added option to import/export data via QR code on PC.
 
-**BTC-Sweep.apk** - Wrapped APK release of the QR code version above that works on Android devices.
+**BTC-Sweep.apk** - Wrapped <a href="https://github.com/bitcoinheiro/btc-sweep/releases" target="_blank">APK release</a> of the QR code version above that works on Android devices.
 
 
 ## **1\. User Guide**
