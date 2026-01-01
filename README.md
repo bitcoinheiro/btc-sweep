@@ -2,11 +2,16 @@
 
 This document provides the complete user guide and technical specifications for the Bitcoin Offline Sweeper tool. This utility is designed for high-security environments, allowing users to compose and sign simple Sweep Bitcoin transactions from WIF keys on air-gapped/offline hardware for future broadcasting.
 
+**WARNING**: Private keys grant total control over your funds. Only use this tool in a trusted, malware-free environment. Always verify destination addresses twice.
+
+
 ## **Files**
 
-**bitcoin_sweeper.html** - Original release with minimal external dependencies
+**bitcoin_sweeper.html** - Original release with minimal external dependencies.
 
-**bitcoin_sweeper_QRcode.html** - With added option to import/export data via QR code.
+**bitcoin_sweeper_QRcode.html** - With added option to import/export data via QR code on PC.
+
+**BTC-Sweep.apk** - Wrapped APK release of the QR code version above that works on Android devices.
 
 
 ## **1\. User Guide**
@@ -38,13 +43,24 @@ To prevent common transaction failures, this tool strictly adheres to the follow
 * **Input Integrity**: Implements nonWitnessUtxo requirements. By providing the full raw hex of the previous transaction, the signer can verify the input amounts and scripts independently, preventing "Fee Siphoning" attacks and script validation errors.  
 * **Canonical Scripting**: The finalization logic ensures that scriptSig and witness fields are constructed correctly, avoiding issues like OP\_PUSHBYTES length mismatches or disabled opcode errors (OP\_MUL).
 
-## **3\. Open Source Licenses**
+## **3\. Troubleshooting**
+**Network Error 400: "Too Many History Entries"**
+
+If you see this error, it means the source address has a very high transaction count (usually >1,000 txs). The public Blockstream API refuses these requests to save resources.
+
+To resolve this:
+
+* Use a private Esplora instance: If you run your own Bitcoin node with Esplora, you can change the API URL in the source code of this tool to point to your local node. Or fork and change the code to fetch data from whatever node API you might have.
+
+* Use Desktop Software: For addresses with thousands of entries, specialized desktop software like Sparrow Wallet is recommended as it handles large data sets more efficiently than a web browser.
+
+## **4\. Open Source Licenses**
 
 * **BitcoinJS-Lib**: MIT License. Copyright (c) 2011-2020 BitcoinJS contributors.  
 * **Tailwind CSS**: MIT License. Copyright (c) Tailwind Labs, Inc.  
 * **Buffer**: MIT License. Copyright (c) Feross Aboukhadijeh.
 
-## **4\. Disclaimer and Warranty**
+## **5\. Disclaimer and Warranty**
 
 **THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND**, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 
