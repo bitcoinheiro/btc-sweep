@@ -2,7 +2,8 @@
 
 This document provides the complete user guide and technical specifications for the Bitcoin Offline Sweeper tool. This utility is designed for high-security environments, allowing users to compose and sign simple Sweep Bitcoin transactions from WIF keys on air-gapped/offline hardware for future broadcasting.
 
-Files:
+## **Files**
+
 **bitcoin_sweeper.html** - Original release without external dependencies
 
 **bitcoin_sweeper_QRcode.html** - With added option to import/export data via QR code.
