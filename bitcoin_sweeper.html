@@ -158,32 +158,41 @@
         async function fetchData() {
             const addr = document.getElementById('srcAddr').value.trim();
             if(!addr) return showStatus("Address required", true);
-            
             const btn = document.getElementById('fetchBtn');
             btn.disabled = true;
             btn.innerText = "Connecting...";
 
             try {
                 const res = await fetch(`https://blockstream.info/api/address/${addr}/utxo`);
-                utxos = await res.json();
                 
+                // Check if the response is actually OK before parsing JSON
+                if (res.status === 429) throw new Error("Rate limited: Too many hits. Please wait 1 minute.");
+                if (!res.ok) throw new Error(`Network error: ${res.statusText}`);
+
+                utxos = await res.json();
                 if(!utxos || utxos.length === 0) throw new Error("No unspent coins found.");
 
-                showStatus("Fetching full transaction data for PSBT...");
+                showStatus(`Found ${utxos.length} inputs. Fetching details...`);
+                
                 for (const utxo of utxos) {
+                    // Added a 200ms delay between requests to avoid "Too many hits"
+                    await new Promise(resolve => setTimeout(resolve, 200)); 
+                    
                     const txRes = await fetch(`https://blockstream.info/api/tx/${utxo.txid}/hex`);
+                    if (txRes.status === 429) throw new Error("Rate limited during detail fetch. Try again in a moment.");
+                    
                     cachedTxData[utxo.txid] = await txRes.text();
                 }
 
                 const totalSats = utxos.reduce((a, b) => a + b.value, 0);
                 document.getElementById('balanceDisplay').innerText = (totalSats / 100000000).toFixed(8) + " BTC";
-                
                 document.getElementById('utxoInfo').classList.remove('hidden');
                 document.getElementById('step2').classList.remove('step-inactive');
-                
                 showStatus("Data synced. You can now go offline.");
             } catch(e) {
-                showStatus(e.message, true);
+                // Better error reporting for the "Unexpected token T" issue
+                const errorMsg = e.message.includes("Unexpected token") ? "API Rate Limit: Too many requests. Wait a bit." : e.message;
+                showStatus(errorMsg, true);
             } finally {
                 btn.disabled = false;
                 btn.innerText = "Fetch Coins & Tx Data";
