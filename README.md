@@ -4,6 +4,7 @@ This document provides the complete user guide and technical specifications for 
 
 Files:
 **bitcoin_sweeper.html** - Original release without external dependencies
+
 **bitcoin_sweeper_QRcode.html** - With added option to import/export data via QR code.
 
 ## **1\. User Guide**
