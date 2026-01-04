@@ -1,6 +1,6 @@
 # **Bitcoin Offline Sweeper 🧹**
 
-This document provides the complete user guide and technical specifications for the Bitcoin Offline Sweeper tool. This utility is designed for high-security environments, allowing users to compose and sign simple Sweep Bitcoin transactions from WIF keys on air-gapped/offline hardware for future broadcasting.
+This utility is designed for high-security environments, allowing users to compose and sign simple Sweep Bitcoin transactions from WIF keys on air-gapped/offline hardware for future broadcasting. This tool is specially useful for Bitcoin users that have paper wallets and don't find a solution to sweep their funds into a new wallet. Don't trust, verify. And if you want you can also verify and compile your own APK using Android Studio and the source available on the APK_source folder. Don't trust, verify.
 
 **⚠️ WARNING**: Private keys grant total control over your funds. Only use this tool in a trusted, malware-free environment. Always verify destination addresses twice.
 
