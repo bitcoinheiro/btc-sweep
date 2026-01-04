@@ -43,7 +43,7 @@ Navigate to app \> manifests \> AndroidManifest.xml.
     android:value="false" /\>
 ```
 
-### **Step 3: Add your HTML file**
+### **Step 3: Add your HTML and JS assets**
 
 1. Right-click app \-\> **New \> Folder \> Assets Folder**.  
 2. Copy your all the content from the dowloaded ``APK_source`` folder into the newly created assets folder (except the ``icon`` folder)
