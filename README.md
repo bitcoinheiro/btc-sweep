@@ -40,8 +40,8 @@ This utility is designed for high-security environments, allowing users to compo
 To prevent common transaction failures, this tool strictly adheres to the following standards:
 
 * **PSBT Framework**: Utilizes Partially Signed Bitcoin Transactions to manage state.  
-* **Input Integrity**: Implements nonWitnessUtxo requirements. By providing the full raw hex of the previous transaction, the signer can verify the input amounts and scripts independently, preventing "Fee Siphoning" attacks and script validation errors.  
-* **Canonical Scripting**: The finalization logic ensures that scriptSig and witness fields are constructed correctly, avoiding issues like OP\_PUSHBYTES length mismatches or disabled opcode errors (OP\_MUL).
+* **Input Integrity**: Implements `nonWitnessUtxo` requirements. By providing the full raw hex of the previous transaction, the signer can verify the input amounts and scripts independently, preventing "Fee Siphoning" attacks and script validation errors.  
+* **Canonical Scripting**: The finalization logic ensures that `scriptSig` and witness fields are constructed correctly, avoiding issues like `OP\_PUSHBYTES` length mismatches or disabled opcode errors (`OP\_MUL`).
 
 ## **3\. Troubleshooting**
 **Network Error 400: "Too Many History Entries"**
@@ -59,6 +59,8 @@ To resolve this:
 * **BitcoinJS-Lib**: MIT License. Copyright (c) 2011-2020 BitcoinJS contributors.  
 * **Tailwind CSS**: MIT License. Copyright (c) Tailwind Labs, Inc.  
 * **Buffer**: MIT License. Copyright (c) Feross Aboukhadijeh.
+* **html5-qrcode (by mebjas)**: <a href="https://github.com/mebjas/html5-qrcode#Apache-2.0-1-ov-file">Apache 2.0 License</a>. Copyright (c) 2020 MINHAZ minhazav@gmail.com.
+* **qrcodejs**: MIT License. Copyright (c) 2012 davidshimjs.
 
 ## **5\. Disclaimer and Warranty**
 
