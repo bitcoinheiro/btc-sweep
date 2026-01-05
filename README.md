@@ -7,11 +7,11 @@ This utility is designed for high-security environments, allowing users to compo
 
 ## **💾 Files**
 
-**💻 bitcoin_sweeper.html** - Original release with minimal external dependencies.
+**💻 bitcoin_sweeper.html** - Original release with minimal external dependencies for PC use.
 
 **📸 bitcoin_sweeper_QRcode.html** - With added option to import/export data via QR code on PC.
 
-**📱 BTC-Sweep.apk** - Wrapped <a href="https://github.com/bitcoinheiro/btc-sweep/releases" target="_blank">APK release</a> of the QR code version above that works on Android devices.
+**📱 BTC-Sweep.apk** - Wrapped <a href="https://github.com/bitcoinheiro/btc-sweep/releases" target="_blank">APK release</a> of the QR code version above that works on Android devices. Source assets and instructions to build the app are available on the [APK_Source folder](https://github.com/bitcoinheiro/btc-sweep/APK_Source/) of this repository.
 
 
 ## **1\. User Guide**
