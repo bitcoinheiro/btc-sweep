@@ -21,11 +21,13 @@ This utility is designed for high-security environments, allowing users to compo
 1. **Open the Tool**: Launch the HTML file on an internet-connected computer/smartphone.  
 2. **Online Source Entry**: Enter the **Public Bitcoin Address** you wish to sweep.  
 3. **Data Retrieval**: Click **Fetch Coins & Tx Data**. The tool will securely download UTXO (Unspent Transaction Output) data and raw transaction hexes via the Blockstream API.  
-4. **Air-Gap Transition**: Save the current page (Ctrl+S or Cmd+S) to a portable USB drive and move the file to your offline, secure machine. If you only have one device, now would be advisable to disconnect from the internet with “Airplane Mode”. This is optional but encouraged.
+4. **Air-Gap or Offline Transition**:
+   * **On PC**, save the current page (Ctrl+S or Cmd+S) to a portable USB drive and move the file to your offline, secure machine. Camera function will not work on the offline saved page, you will need another QR reader app to read your key and destionation address. If you only have one device, you can disconnect from the internet with “Airplane Mode” and the camera should function if you keep using the same file.
+   * **On Android with APK**, disconnect from the internet with “Airplane Mode” and proceed using the tool to sign offline.
 
 ### **🚫🌐 Phase 2: Offline (Signing)**
 
-1. **Secure Environment**: Ensure the computer/smartphone is completely disconnected from all networks ✈️ (WiFi/Bluetooth/Ethernet). This is optional but encouraged.
+1. **Secure Environment**: Ensure the computer/smartphone is completely disconnected from all networks ✈️ (WiFi/Bluetooth/Ethernet). This is optional but very encouraged.
 2. **Authentication**: Enter your **Private Key (WIF)**, the **Destination Address**, and your preferred **Fee Rate (sat/vB)**.  
 3. **Cryptographic Signing**: Click **Sign Transaction**. The tool uses a local BitcoinJS engine to sign the inputs.  
 4. **Verification**: Carefully review the details in the **HEX Transaction Details** section. Ensure the "Sent Amount" and "To Address" match your expectations before proceeding. It is also advisable to use another tool to preview the transaction and check all data before broadcasting. Mempool.space has a good <a href="https://mempool.space/tx/preview" target="_blank">Preview Transaction tool</a> before broadcast.
@@ -34,6 +36,7 @@ This utility is designed for high-security environments, allowing users to compo
 
 1. **Export Hex**: Copy the generated **Signed Transaction Hex**.  
 2. **Finalize**: Transfer this hex back to an online device and broadcast it using a trusted service (e.g., <a href="https://blockstream.info/tx/push" target="_blank">Blockstream.info</a>, <a href="https://mempool.space/tx/preview" target="_blank">Mempool.space</a>, or your own full node).
+3. **Clear cache**: This is optional, but it's recommended to clean your browser cache or app data (cache) after using this tool to remove all traces of data from the operation.
 
 ## **2\. Technical Security & PSBT Logic**
 
