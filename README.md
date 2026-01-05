@@ -57,10 +57,10 @@ To resolve this:
 ## **4\. Links to Open Source Dependencies and their Licenses**
 
 * **<a href="https://github.com/bitcoinjs/bitcoinjs-lib">BitcoinJS-Lib</a>**: MIT License. Copyright (c) 2011-2020 BitcoinJS contributors.  
-* ***<a href="https://github.com/tailwindlabs/tailwindcss">Tailwind CSS</a>**: MIT License. Copyright (c) Tailwind Labs, Inc.  
-* ***<a href="https://github.com/feross/buffer">Buffer</a>**: MIT License. Copyright (c) Feross Aboukhadijeh.
-* ***<a href="https://github.com/mebjas/html5-qrcode">html5-qrcode</a>**: <a href="https://github.com/mebjas/html5-qrcode#Apache-2.0-1-ov-file">Apache 2.0 License</a>. Copyright (c) 2020 MINHAZ (mebjas) minhazav@gmail.com.
-* ***<a href="https://github.com/bitcoinjs/bitcoinjs-lib">qrcodejs</a>**: MIT License. Copyright (c) 2012 davidshimjs.
+* **<a href="https://github.com/tailwindlabs/tailwindcss">Tailwind CSS</a>**: MIT License. Copyright (c) Tailwind Labs, Inc.  
+* **<a href="https://github.com/feross/buffer">Buffer</a>**: MIT License. Copyright (c) Feross Aboukhadijeh.
+* **<a href="https://github.com/mebjas/html5-qrcode">html5-qrcode</a>**: <a href="https://github.com/mebjas/html5-qrcode#Apache-2.0-1-ov-file">Apache 2.0 License</a>. Copyright (c) 2020 MINHAZ (mebjas) minhazav@gmail.com.
+* **<a href="https://github.com/bitcoinjs/bitcoinjs-lib">qrcodejs</a>**: MIT License. Copyright (c) 2012 davidshimjs.
 
 ## **5\. Disclaimer and Warranty**
 
