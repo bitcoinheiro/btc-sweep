@@ -61,6 +61,7 @@ To resolve this:
 * **<a href="https://github.com/feross/buffer">Buffer</a>**: MIT License. Copyright (c) Feross Aboukhadijeh.
 * **<a href="https://github.com/mebjas/html5-qrcode">html5-qrcode</a>**: <a href="https://github.com/mebjas/html5-qrcode#Apache-2.0-1-ov-file">Apache 2.0 License</a>. Copyright (c) 2020 MINHAZ (mebjas) minhazav@gmail.com.
 * **<a href="https://github.com/bitcoinjs/bitcoinjs-lib">qrcodejs</a>**: MIT License. Copyright (c) 2012 davidshimjs.
+*  **<a href="https://blockstream.info/explorer-api">Blockstream Esplora (API Engine)</a>**: GNU AGPLv3. Copyright (c) 2018 Blockstream Corporation Inc.
 
 ## **5\. Disclaimer and Warranty**
 
